@@ -1,5 +1,6 @@
 import java.util.*;
 
+
 public class Solution1 {
 
     static List<List<Integer>> res = new ArrayList<>();
@@ -21,21 +22,11 @@ public class Solution1 {
 
     }
 
-    private static boolean judge(List<Integer> data) {
-        int row = data.get(0) * data.get(1) * data.get(2);
-        int col = data.get(0) * data.get(3) * data.get(6);
-        int cos = data.get(0) * data.get(4) * data.get(8);
-        return row == col && row == cos &&
-                row == data.get(3) * data.get(4) * data.get(5)
-                && row == data.get(6) * data.get(7) * data.get(8)
-                && col == data.get(1) * data.get(4) * data.get(7)
-                && col == data.get(2) * data.get(5) * data.get(8)
-                && cos == data.get(6) * data.get(4) * data.get(2);
-    }
 
-    public static List<List<Integer>> dfs(int[] arr, List<Integer> list) {
+
+    public static void dfs(int[] arr, List<Integer> list) {
         List<Integer> temp = new ArrayList<>(list);
-        if (arr.length == list.size() && judge(temp)) {
+        if (arr.length == list.size() && Utils.valid(temp)) {
             res.add(temp);
         }
         for (int i = 0; i < arr.length; i++) {
@@ -46,7 +37,6 @@ public class Solution1 {
             dfs(arr, temp);
             temp.remove(temp.size() - 1);
         }
-        return res;
     }
 
 

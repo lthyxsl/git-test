@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Solution5 {
+public class Solution6 {
 
     static List<List<Integer>> res = new ArrayList<>();
 
@@ -23,6 +23,10 @@ public class Solution5 {
 
     }
 
+    private static boolean judge(List<Integer> data) {
+        return valid(data);
+    }
+
     public static void dfs(int[] arr, List<Integer> list) {
         List<Integer> temp = new ArrayList<>(list);
         if (arr.length == list.size() && Utils.valid(temp)) {
@@ -37,5 +41,4 @@ public class Solution5 {
             temp.remove(temp.size() - 1);
         }
     }
-//    }
 }
