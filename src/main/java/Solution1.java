@@ -41,4 +41,8 @@ public class Solution1 {
         Scanner sc = new Scanner(System.in);
         String expr = sc.nextLine();
     }
+
+    void print() {
+        System.out.println("Test");
+    }
 }
