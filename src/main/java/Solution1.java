@@ -1,6 +1,5 @@
 import java.util.*;
 
-
 public class Solution1 {
 
     static List<List<Integer>> res = new ArrayList<>();
