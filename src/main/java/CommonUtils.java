@@ -1,3 +1,5 @@
+import java.util.Arrays;
+import java.util.List;
 import java.util.Locale;
 
 public class CommonUtils {
@@ -7,6 +9,10 @@ public class CommonUtils {
                 .replaceAll("-", "")
                 .replaceAll(":", "")
                 .toLowerCase(Locale.US);
+    }
+
+    public static List<String> initData(String mac) {
+        return Arrays.asList("Hello", "World", "Java");
     }
 
 }
