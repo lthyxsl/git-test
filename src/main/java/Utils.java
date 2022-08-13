@@ -13,4 +13,8 @@ public class Utils {
                 && col == data.get(2) * data.get(5) * data.get(8)
                 && cos == data.get(6) * data.get(4) * data.get(2);
     }
+
+    public static Boolean getBoolean(String b) {
+        return Boolean.valueOf(b);
+    }
 }
