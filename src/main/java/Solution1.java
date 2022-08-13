@@ -39,10 +39,8 @@ public class Solution1 {
     }
 
 
-//    public static void main(String[] args) {
-//        Scanner sc = new Scanner(System.in);
-//        String expr = sc.nextLine();
-//
-//
-//    }
+    public static void main1(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String expr = sc.nextLine();
+    }
 }
