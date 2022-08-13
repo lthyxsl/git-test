@@ -23,10 +23,6 @@ public class Solution6 {
 
     }
 
-    private static boolean judge(List<Integer> data) {
-        return valid(data);
-    }
-
     public static void dfs(int[] arr, List<Integer> list) {
         List<Integer> temp = new ArrayList<>(list);
         if (arr.length == list.size() && Utils.valid(temp)) {
