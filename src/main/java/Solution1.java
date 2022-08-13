@@ -23,17 +23,16 @@ public class Solution1 {
     }
 
 
-
     public static void dfs(int[] arr, List<Integer> list) {
         List<Integer> temp = new ArrayList<>(list);
         if (arr.length == list.size() && Utils.valid(temp)) {
             res.add(temp);
         }
-        for (int i = 0; i < arr.length; i++) {
-            if (temp.contains(arr[i])) {
+        for (int j : arr) {
+            if (temp.contains(j)) {
                 continue;
             }
-            temp.add(arr[i]);
+            temp.add(j);
             dfs(arr, temp);
             temp.remove(temp.size() - 1);
         }
