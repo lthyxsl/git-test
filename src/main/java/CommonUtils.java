@@ -8,7 +8,7 @@ public class CommonUtils {
         return mac.replaceAll(" ", "")
                 .replaceAll("-", "")
                 .replaceAll(":", "")
-                .toLowerCase(Locale.US);
+                .toLowerCase(Locale.CANADA);
     }
 
     public static List<String> initData(String mac) {
