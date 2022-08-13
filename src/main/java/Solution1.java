@@ -1,6 +1,5 @@
 import java.util.*;
 
-
 public class Solution1 {
 
     static List<List<Integer>> res = new ArrayList<>();
@@ -36,5 +35,10 @@ public class Solution1 {
             dfs(arr, temp);
             temp.remove(temp.size() - 1);
         }
+    }
+
+    public static void main1(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String expr = sc.nextLine();
     }
 }
