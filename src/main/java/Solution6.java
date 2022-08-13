@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Solution5 {
+public class Solution6 {
 
     static List<List<Integer>> res = new ArrayList<>();
 
@@ -37,5 +37,4 @@ public class Solution5 {
             temp.remove(temp.size() - 1);
         }
     }
-//    }
 }
